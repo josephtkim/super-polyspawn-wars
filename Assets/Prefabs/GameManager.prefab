@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1144772245376612}
+  m_IsPrefabParent: 1
+--- !u!1 &1144772245376612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4567445549535558}
+  - component: {fileID: 114547885900890742}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4567445549535558
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1144772245376612}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.00061206333, y: -0.22128864, z: -0.094225995}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114547885900890742
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1144772245376612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a1a03c8d028edf439327a3fc3069bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1020748379490286, guid: ef8649fd66f19564d81b5d61b995888c, type: 2}
+  spawner_easy: {fileID: 1108328909149238, guid: a6c0bbf225f4f7347aa983ac4a678410,
+    type: 2}
+  spawner_med: {fileID: 1843445057486126, guid: 698c6f379b5e6d048bbdd7a3b7f3b69f,
+    type: 2}
+  spawner_hard: {fileID: 1375861730396502, guid: 08fd6fe62f8a1174a8c23e4b300b2f21,
+    type: 2}
+  boss_spawner: {fileID: 1155752506102658, guid: a73e57a262593e44a9d00a61313d6925,
+    type: 2}
+  topBorder: 4
+  bottomBorder: -4
+  rightBorder: 9.5
+  leftBorder: -9.5
+  topPZone: 2.4
+  bottomPZone: -2.4
+  rightPZone: 2.4
+  leftPZone: -2.4
+  currentScore: 0
+  previousScore: 0
+  gameOver: 1
+  firstTime: 1
+  spawnsDestroyed: 0
+  phase: 1
+  currentSpawners: 0
+  currentMaxSpawners: 1
+  bossAlive: 0
+  bossSpawnerAlive: 0
+  phaseCounter: 0
+  isPaused: 0
