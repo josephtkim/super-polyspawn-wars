@@ -1,6 +1,6 @@
 # SUPER POLYSPAWN WARS  
 Space Shooter Game created and written entirely in Unity and C#.  
-Throwback to class arcade style space shooters.  
+Throwback to classic arcade-style space shooters.  
 
 Play it LIVE [here](http://kimbrosinc.com/projects/super_polyspawn_wars/)  
 Note: WebGL is not fully supported on some browsers. It works best on Chrome, Firefox or Edge.  
@@ -12,7 +12,7 @@ Note: WebGL is not fully supported on some browsers. It works best on Chrome, Fi
 * Download Source Code here, then Run or Build the project in Unity.  
 
 ## IMPLEMENTATION:  
-* Uses trigonometry to calculate rotations and angles for ship, enemies and laser.  
+* Uses trigonometry to calculate rotations and angles for player ship, enemies and lasers.  
 * All objects in game are set as prefabs.  
 * Background has parallax effect based on player's movement.  
 * Coroutines for enemy movement, spawning, powerup generation, and powerup effects.  
@@ -23,9 +23,9 @@ Note: WebGL is not fully supported on some browsers. It works best on Chrome, Fi
 * Pause or Quit game
 * Temporary Invincibility when hit
 * Score and Grade system
-* Increase in difficulty
-* Unique bosses and attack patterns
-* 60 FPS animations
+* Increase in difficulty as player progresses
+* Unique bosses and attack patterns  
+* 60 FPS animations  
 
 ## CREDITS:  
 * Art and Animations: Isaac Kim  
