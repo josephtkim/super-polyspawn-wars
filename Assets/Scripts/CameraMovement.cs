@@ -104,9 +104,9 @@ public class CameraMovement : MonoBehaviour {
             // Background parallax movement
             float x = playerPosition.x;
             float y = playerPosition.y;
-            bg1.transform.position = new Vector3(-0.35f * x, -0.35f * y, 0);
-            bg2.transform.position = new Vector3(-0.23f * x, -0.23f * y, 0);
-            bg3.transform.position = new Vector3(-0.11f * x, -0.11f * y, 0);
+            bg1.transform.position = new Vector3(-0.08f * x, -0.08f * y, 0);
+            bg2.transform.position = new Vector3(-0.06f * x, -0.06f * y, 0);
+            bg3.transform.position = new Vector3(-0.03f * x, -0.03f * y, 0);
 
             if (musicPlaying == false)
             {
