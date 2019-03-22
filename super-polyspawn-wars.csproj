@@ -14,6 +14,7 @@
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>WebGL:20</UnityBuildTarget>
     <UnityVersion>2017.3.1f1</UnityVersion>
@@ -285,28 +286,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Boss1_AI.cs" />
-    <Compile Include="Assets\Scripts\Boss2_AI.cs" />
-    <Compile Include="Assets\Scripts\Boss3_AI.cs" />
-    <Compile Include="Assets\Scripts\Boss4_AI.cs" />
-    <Compile Include="Assets\Scripts\BossExplosion.cs" />
-    <Compile Include="Assets\Scripts\BossSpawner.cs" />
-    <Compile Include="Assets\Scripts\BossSpawnerExplosion.cs" />
-    <Compile Include="Assets\Scripts\BossX1_AI.cs" />
-    <Compile Include="Assets\Scripts\BossX2_AI.cs" />
-    <Compile Include="Assets\Scripts\BossX3_AI.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
-    <Compile Include="Assets\Scripts\EnemyAI.cs" />
-    <Compile Include="Assets\Scripts\EnemyExplosion.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Laser.cs" />
-    <Compile Include="Assets\Scripts\NormalSpawnerExplosion.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\PlayerExplosion.cs" />
-    <Compile Include="Assets\Scripts\Powerup.cs" />
-    <Compile Include="Assets\Scripts\PowerupSpawner.cs" />
-    <Compile Include="Assets\Scripts\Spawner.cs" />
-    <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\Boss1_AI.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\Boss2_AI.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\Boss3_AI.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\Boss4_AI.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\BossExplosion.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\BossSpawner.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\BossSpawnerExplosion.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\BossX1_AI.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\BossX2_AI.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\BossX3_AI.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\EnemyAI.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\EnemyExplosion.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\NormalSpawnerExplosion.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\Game Logic Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Game Logic Scripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\Laser.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\PlayerExplosion.cs" />
+    <Compile Include="Assets\Scripts\Powerup Scripts\Powerup.cs" />
+    <Compile Include="Assets\Scripts\Powerup Scripts\PowerupSpawner.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Fonts\Press_Start_2P\OFL.txt" />
