@@ -32,7 +32,6 @@ Note: WebGL is not fully supported on some browsers. It works best on Chrome, Fi
 * Game Engine: [Unity](https://unity3d.com/)
 * Sounds: [JFXR](https://jfxr.frozenfractal.com)
 * Music: [Erik Skiff](http://ericskiff.com/music/)
-  * Underclocked
   * All of Us
   * Arpanauts
   * Digital Native
