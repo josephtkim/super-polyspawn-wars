@@ -7,7 +7,7 @@ public class CameraMovement : MonoBehaviour {
     [SerializeField] private AudioSource _audioSource1;
     [SerializeField] private AudioSource _audioSource2;
     [SerializeField] private AudioSource _audioSource3;
-    [SerializeField] private AudioSource _audioSource4;
+    
     private bool musicPlaying = false;
 
     public GameObject player;
@@ -44,7 +44,7 @@ public class CameraMovement : MonoBehaviour {
     private void playRandomSong()
     {
         // Randomize song selection
-        int songNumber = Random.Range(0,4);
+        int songNumber = Random.Range(0,3);
         if (songNumber == 0)
         {
             _audioSource1.Play();
@@ -53,13 +53,9 @@ public class CameraMovement : MonoBehaviour {
         {
             _audioSource2.Play();
         }
-        else if (songNumber == 2)
-        {
-            _audioSource3.Play();
-        }
         else
         {
-            _audioSource4.Play();
+            _audioSource3.Play();
         }
     }
 
@@ -67,8 +63,7 @@ public class CameraMovement : MonoBehaviour {
     {
         _audioSource1.Stop();
         _audioSource2.Stop();
-        _audioSource3.Stop();
-        _audioSource4.Stop();
+        _audioSource3.Stop();        
     }
 
     void Update()
