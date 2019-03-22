@@ -14,13 +14,13 @@ public class Powerup : MonoBehaviour {
     
     private void Start()
     {
-        startTimer();
+        StartTimer();
     }   
     
     void Update () {
 		if (time >= timeUntilDissolve)
         {
-            StopCoroutine(timerUntilGoneRoutine());
+            StopCoroutine(TimerUntilGoneRoutine());
             Destroy(this.gameObject);
         }
 	}
@@ -58,12 +58,12 @@ public class Powerup : MonoBehaviour {
         }
     }
 
-    public void startTimer()
+    public void StartTimer()
     {
-        timer = StartCoroutine(timerUntilGoneRoutine());
+        timer = StartCoroutine(TimerUntilGoneRoutine());
     }
 
-    IEnumerator timerUntilGoneRoutine()
+    IEnumerator TimerUntilGoneRoutine()
     {
         while (true)
         {

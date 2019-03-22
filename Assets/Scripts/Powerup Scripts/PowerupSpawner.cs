@@ -21,12 +21,12 @@ public class PowerupSpawner : MonoBehaviour {
     {
         while (true)
         {
-            loadPowerUp();
+            LoadPowerUp();
             yield return new WaitForSeconds(Random.Range(24f, 27f));
         }
     }
 
-    private void loadPowerUp()
+    private void LoadPowerUp()
     {
         // 0 = health, 1 = shield, 2 = speed, 3 = spreadshot
         int randomIndex = Random.Range(0, 4);
