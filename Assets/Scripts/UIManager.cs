@@ -100,7 +100,7 @@ public class UIManager : MonoBehaviour {
         {
             finalGradeText.text = finalGrades[4];
         }
-        else if (score > 300000)
+        else if (score >= 300000)
         {
             finalGradeText.text = finalGrades[5];
         }
@@ -112,16 +112,16 @@ public class UIManager : MonoBehaviour {
         HideBossInfo();
 
         finalScoreText.text = score.ToString();
-        showEvaluationScreen();
+        ShowEvaluationScreen();
     }
     public void HideGameOverScreen()
     {
-        hideEvaluationScreen();
+        HideEvaluationScreen();
         ShowLivesAndScore();
         ShowCurrentPhase();
     }
 
-    private void showEvaluationScreen()
+    private void ShowEvaluationScreen()
     {
         finalScoreLabel.gameObject.SetActive(true);
         finalScoreText.gameObject.SetActive(true);
@@ -132,7 +132,7 @@ public class UIManager : MonoBehaviour {
         evalScreenQuitText.gameObject.SetActive(true);
     }
 
-    private void hideEvaluationScreen()
+    private void HideEvaluationScreen()
     {
         finalScoreLabel.gameObject.SetActive(false);
         finalScoreText.gameObject.SetActive(false);
