@@ -27,6 +27,9 @@ public class EnemyAI : MonoBehaviour {
     private float currentPlayerX;
     private float currentPlayerY;
 
+    // Prevent multiple explosions
+    private bool isExploded = false;
+
     private void Start()
     {
         _uiManager = GameObject.Find("Canvas").GetComponent<UIManager>();        
@@ -108,7 +111,10 @@ public class EnemyAI : MonoBehaviour {
 
         if (hitpoints <= 0)
         {
-            Instantiate(_enemyExplosionPrefab, transform.position, Quaternion.identity);
+            if (isExploded == false) {
+                Instantiate(_enemyExplosionPrefab, transform.position, Quaternion.identity);
+                isExploded = true;
+            }
 
             _uiManager.UpdateScore(pointValue);
             //AudioSource.PlayClipAtPoint(_clip, Camera.main.transform.position, 1f);

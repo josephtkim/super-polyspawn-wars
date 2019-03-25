@@ -25,7 +25,7 @@ Note: WebGL is not fully supported on some browsers. It works best on Chrome, Fi
 * Score and Grade system
 * Increase in difficulty as player progresses
 * Unique bosses and attack patterns  
-* 60 FPS animations  
+* 30 FPS animations  
 
 ## CREDITS:  
 * Art and Animations: Isaac Kim  

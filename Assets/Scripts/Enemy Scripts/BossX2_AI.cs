@@ -44,6 +44,9 @@ public class BossX2_AI : MonoBehaviour
     private bool hasShield = false;
     private int shieldHitPoints = 200;
 
+    // Prevent multiple explosions
+    private bool explosionStarted = false;
+
     private void Start()
     {
         _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -189,7 +192,12 @@ public class BossX2_AI : MonoBehaviour
                 _gameManager.bossSpawnExtra();
             }
 
-            Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
+            if (explosionStarted == false)
+            {
+                Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
+                explosionStarted = true;
+            }
+            
             //AudioSource.PlayClipAtPoint(_clip, Camera.main.transform.position, 1f);
             Destroy(this.gameObject);
         }

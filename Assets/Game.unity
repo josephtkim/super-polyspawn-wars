@@ -230,7 +230,6 @@ MonoBehaviour:
   _audioSource1: {fileID: 1180757932}
   _audioSource2: {fileID: 2112431452}
   _audioSource3: {fileID: 1608230271}
-  _audioSource4: {fileID: 0}
   player: {fileID: 0}
   smoothTime: 0.2
 --- !u!81 &320359197
@@ -616,6 +615,12 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114744718590388110, guid: ae62b2eba5b8cc548b491c36c864dbb8,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ec0d49952483f9c4389121e6ccb81516,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae62b2eba5b8cc548b491c36c864dbb8, type: 2}
   m_IsPrefabParent: 0

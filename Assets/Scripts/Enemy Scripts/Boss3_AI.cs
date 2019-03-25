@@ -36,6 +36,9 @@ public class Boss3_AI : MonoBehaviour
     private float prevAngle;
     Coroutine ChargingMovement;
 
+    // Prevent multiple explosions
+    private bool explosionStarted = false;
+
     private void Start()
     {
         _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -160,7 +163,12 @@ public class Boss3_AI : MonoBehaviour
                 _gameManager.bossSpawnExtra();
             }
 
-            Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
+            if (explosionStarted == false)
+            {
+                Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
+                explosionStarted = true;
+            }
+            
             //AudioSource.PlayClipAtPoint(_clip, Camera.main.transform.position, 1f);
             Destroy(this.gameObject);
         }
