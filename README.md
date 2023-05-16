@@ -2,9 +2,6 @@
 Space Shooter Game created and written entirely in Unity and C#.  
 Throwback to classic arcade-style space shooters.  
 
-Play it LIVE [here](http://kimbrosinc.com/projects/super_polyspawn_wars/)  
-Note: WebGL is not fully supported on some browsers. It works best on Chrome, Firefox or Edge.  
-
 ![Screen shot](./spw_screenshot.png)
 
 ## REQUIREMENTS FOR DESKTOP PLAY:  
